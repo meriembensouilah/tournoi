@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tournoi</title>
+    <style>
+    /* Apply styles to the body element */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* Style the form container */
+      form {
+        background-color: #fff;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      /* Style form headings */
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      
+      /* Style labels and input fields */
+      label {
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+      }
+      
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      
+      /* Style the submit button */
+      input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      
+      /* Change button style on hover */
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+    </style>
+</head>
+<body>
+    <h1>Formulaire de Gestion des participants</h1>
+    
+    <form action="traitement.php" method="post">
+        <label for="prenom">Prenom :</label>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label for="numero">Numéro de participant :</label>
+        <input type="text" id="numero" name="numero" required><br><br>
+
+        <label for="equipe">Équipe :</label>
+       <input type="text" id="equipe" name="equipe" required><br><br>
+
+        </select><br><br>
+
+        <input type="submit" value="Enregistrer">
+    </form>
+</body>
+</html>
